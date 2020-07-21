@@ -1,14 +1,33 @@
 import React from 'react'
-import { View, Text } from 'react-native';
+import { View, Text, Image, StatusBar } from 'react-native';
 
 import { styles } from './styles';
+import Button from '../shared/Button';
 
 function Home() {
   return (
-    <View style={styles.wrapper}>
-      <Text style={styles.text}>Welcome to Ryzmo</Text>
-      <Text style={styles.text}>This home component will show first 3 screens designed on figma</Text>
-    </View>
+    <React.Fragment>
+      <StatusBar hidden />
+      <View style={styles.wrapper}>
+        <Image
+          style={styles.banner}
+          source={require('../../assets/home-banner.png')}
+        />
+
+        <Image style={styles.icon} source={require('../../assets/home-icon-2.png')} />
+        <Text style={styles.heading}>Ryzmo</Text>
+        <Text style={styles.text}>Listen to a huge {"\n"}collection of songs based on {"\n"}your choices and taste.</Text>
+
+        <View style={styles.buttonContainer}>
+          <View style={styles.buttonWrapper}>
+            <Button type="primary" text="Sign Up" />
+          </View>
+          <View style={styles.buttonWrapper}>
+            <Button type="secondary" text="Login" />
+          </View>
+        </View>
+      </View>
+    </React.Fragment>
   )
 }
 
