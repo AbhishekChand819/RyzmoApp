@@ -1,14 +1,14 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   primaryButton: {
-    width: '83%',
-    height: 50,
+    width: '82%',
+    height: 58,
     backgroundColor: '#EE008F',
     borderRadius: 50,
   },
   primaryText: {
-    paddingTop: 12,
+    paddingTop: 15,
     textAlign: 'center',
     fontFamily: 'Montserrat-Regular',
     fontStyle: 'normal',
@@ -18,15 +18,15 @@ export const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
   secondaryButton: {
-    width: '83%',
-    height: 50,
+    width: '82%',
+    height: 58,
     backgroundColor: '#1B0536',
     borderColor: '#FFFFFF',
-    borderWidth: 2,
+    borderWidth: 2.5,
     borderRadius: 50,
   },
   secondaryText: {
-    paddingTop: 12,
+    paddingTop: 14,
     textAlign: 'center',
     fontFamily: 'Montserrat-Regular',
     fontStyle: 'normal',

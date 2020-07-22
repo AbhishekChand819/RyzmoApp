@@ -1,22 +1,27 @@
-import React from 'react'
-import { View, Text, Image, StatusBar } from 'react-native';
-
-import { styles } from './styles';
+import React from 'react';
+import {View, Text, Image, StatusBar} from 'react-native';
+import {styles} from './styles';
 import Button from '../shared/Button';
 
 function Home() {
   return (
     <React.Fragment>
-      <StatusBar hidden />
+      <StatusBar backgroundColor="#1B0536" />
       <View style={styles.wrapper}>
         <Image
           style={styles.banner}
           source={require('../../assets/home-banner.png')}
         />
 
-        <Image style={styles.icon} source={require('../../assets/home-icon-2.png')} />
+        <Image
+          style={styles.icon}
+          source={require('../../assets/home-icon-2.png')}
+        />
         <Text style={styles.heading}>Ryzmo</Text>
-        <Text style={styles.text}>Listen to a huge {"\n"}collection of songs based on {"\n"}your choices and taste.</Text>
+        <Text style={styles.text}>
+          Listen to a huge {'\n'}collection of songs based on {'\n'}your choices
+          and taste.
+        </Text>
 
         <View style={styles.buttonContainer}>
           <View style={styles.buttonWrapper}>
@@ -28,7 +33,7 @@ function Home() {
         </View>
       </View>
     </React.Fragment>
-  )
+  );
 }
 
 export default Home;

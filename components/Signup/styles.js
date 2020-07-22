@@ -8,13 +8,6 @@ export const styles = StyleSheet.create({
     backgroundColor: '#1B0536',
     height: '100%',
   },
-  banner: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    width: '100%',
-  },
   heading: {
     fontFamily: 'Montserrat-SemiBold',
     fontSize: 28,
