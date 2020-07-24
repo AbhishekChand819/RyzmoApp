@@ -1,15 +1,29 @@
 import React from 'react';
-import { NativeRouter, Route } from 'react-router-native';
+import { StatusBar } from 'react-native'
 import changeNavigationBarColor from 'react-native-navigation-bar-color';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import Home from './components/Home';
+import Initial from './components/Initial';
+import Login from './components/Login';
+import Register from './components/Register';
 
-export default function App() {
+const Stack = createStackNavigator();
+
+function App() {
   changeNavigationBarColor('#1B0536');
-
   return (
-    <NativeRouter>
-      <Route path="/" component={Home} />
-    </NativeRouter>
+    <React.Fragment>
+      <StatusBar backgroundColor="#1B0536" />
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Initial" screenOptions={{ headerShown: false }}>
+          <Stack.Screen name="Initial" component={Initial} />
+          <Stack.Screen name="Register" component={Register} />
+          <Stack.Screen name="Login" component={Login} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </React.Fragment>
   );
 }
+
+export default App;

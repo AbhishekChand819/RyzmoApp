@@ -1,13 +1,12 @@
 import React from 'react'
-import { View, Text, Image, StatusBar } from 'react-native';
+import { View, Text, Image } from 'react-native';
 
 import { styles } from './styles';
 import Button from '../shared/Button';
 
-function Home() {
+function Initial({ navigation }) {
   return (
     <React.Fragment>
-      <StatusBar hidden />
       <View style={styles.wrapper}>
         <Image
           style={styles.banner}
@@ -20,10 +19,10 @@ function Home() {
 
         <View style={styles.buttonContainer}>
           <View style={styles.buttonWrapper}>
-            <Button type="primary" text="Sign Up" />
+            <Button type="primary" text="Sign Up" onPress={() => navigation.navigate("Register")} />
           </View>
           <View style={styles.buttonWrapper}>
-            <Button type="secondary" text="Login" />
+            <Button type="secondary" text="Login" onPress={() => navigation.navigate("Login")} />
           </View>
         </View>
       </View>
@@ -31,4 +30,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default Initial;
