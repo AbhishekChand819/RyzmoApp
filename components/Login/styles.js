@@ -36,9 +36,12 @@ export const styles = StyleSheet.create({
     marginBottom: 80
   },
   view3: {
-    height: 18,
     fontFamily: "Montserrat-SemiBold",
     fontSize: 15
+  },
+  text5: {
+    marginBottom: -5,
+    color: '#EE008F'
   },
   text3: {
     color: "#FFFFFF",

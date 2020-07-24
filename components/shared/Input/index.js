@@ -3,7 +3,7 @@ import { TextInput, Image, View } from 'react-native';
 
 import { styles } from './styles';
 
-function Input({ placeholder, icon }) {
+function Input({ placeholder, icon, type }) {
   return (
     <View style={styles.wrapper}>
       <Image
@@ -11,7 +11,7 @@ function Input({ placeholder, icon }) {
         source={icon}
       />
       <TextInput
-        secureTextEntry={true}
+        secureTextEntry={type === 'secure'}
         style={styles.inputStyle}
         placeholder={placeholder}
         placeholderTextColor="#C4C4C4"
