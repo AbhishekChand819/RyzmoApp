@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   wrapper: {
@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
     lineHeight: 25,
     textAlign: 'center',
     color: '#D3D3D3',
-    marginBottom: 70,
+    marginBottom: 40,
   },
   buttonWrapper: {
     width: '100%',
