@@ -13,9 +13,15 @@ function Initial({ navigation }) {
           source={require('../../assets/home-banner.png')}
         />
 
-        <Image style={styles.icon} source={require('../../assets/home-icon-2.png')} />
+        <Image
+          style={styles.icon}
+          source={require('../../assets/home-icon-2.png')}
+        />
         <Text style={styles.heading}>Ryzmo</Text>
-        <Text style={styles.text}>Listen to a huge {"\n"}collection of songs based on {"\n"}your choices and taste.</Text>
+        <Text style={styles.text}>
+          Listen to a huge {'\n'}collection of songs based on {'\n'}your choices
+          and taste.
+        </Text>
 
         <View style={styles.buttonContainer}>
           <View style={styles.buttonWrapper}>
@@ -27,7 +33,7 @@ function Initial({ navigation }) {
         </View>
       </View>
     </React.Fragment>
-  )
+  );
 }
 
 export default Initial;
