@@ -9,8 +9,8 @@ export default function App() {
   changeNavigationBarColor('#1B0536');
   return (
     <NativeRouter>
-      {/* <Route path="/" component={Home} /> */}
-      <Route path="/" component={Screen2} />
+      <Route path="/" component={Home} />
+      {/* <Route path="/" component={Screen2} /> */}
     </NativeRouter>
   );
 }
